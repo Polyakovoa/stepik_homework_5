@@ -1,0 +1,59 @@
+version: 2
+
+sources:
+  - name: smartphones_source
+    schema: smartphones
+    tables:
+      - name: smartphone_cleaned_v5
+        description: "Сырые данные о смартфонах из CSV"
+        columns:
+          - name: brand_name
+            description: "Бренд смартфона"
+          - name: model
+            description: "Модель"
+          - name: price
+            description: "Цена"
+          - name: rating
+            description: "Рейтинг"
+          - name: has_5g
+            description: "Поддержка 5G"
+          - name: has_nfc
+            description: "Наличие NFC"
+          - name: has_ir_blaster
+            description: "Наличие ИК-порта"
+          - name: processor_brand
+            description: "Производитель процессора"
+          - name: num_cores
+            description: "Количество ядер"
+          - name: processor_speed
+            description: "Тактовая частота (ГГц)"
+          - name: battery_capacity
+            description: "Ёмкость аккумулятора (мАч)"
+          - name: fast_charging_available
+            description: "Наличие быстрой зарядки"
+          - name: fast_charging
+            description: "Мощность быстрой зарядки (Вт)"
+          - name: ram_capacity
+            description: "Объём оперативной памяти (ГБ)"
+          - name: internal_memory
+            description: "Встроенная память (ГБ)"
+          - name: screen_size
+            description: "Диагональ экрана (дюймы)"
+          - name: refresh_rate
+            description: "Частота обновления экрана (Гц)"
+          - name: resolution
+            description: "Разрешение экрана"
+          - name: num_rear_cameras
+            description: "Количество основных камер"
+          - name: num_front_cameras
+            description: "Количество фронтальных камер"
+          - name: os
+            description: "Операционная система"
+          - name: primary_camera_rear
+            description: "Разрешение основной камеры (Мп)"
+          - name: primary_camera_front
+            description: "Разрешение фронтальной камеры (Мп)"
+          - name: extended_memory_available
+            description: "Поддержка расширения памяти"
+          - name: extended_upto
+            description: "Максимальный объём расширения (ГБ)"

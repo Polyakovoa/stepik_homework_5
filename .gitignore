@@ -1,0 +1,14 @@
+# dbt
+target/
+dbt_packages/
+logs/
+*.pyc
+__pycache__/
+
+# Пароли и профили
+profiles.yml
+.env
+
+# Системные файлы
+.DS_Store
+Thumbs.db

@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: top_10_combinations
+    description: "Топ-10 комбинаций процессоров и аккумуляторов по количеству устройств"
+    columns:
+      - name: processor_brand
+        description: "Производитель процессора"
+        tests:
+          - not_null
+      - name: num_cores
+        description: "Количество ядер"
+      - name: processor_speed
+        description: "Тактовая частота (ГГц)"
+      - name: battery_capacity
+        description: "Ёмкость аккумулятора (мАч)"
+      - name: combination_count
+        description: "Количество устройств с такой комбинацией"
+
+  - name: top_10_processors
+    description: "Топ-10 брендов процессоров по общему количеству устройств"
+    columns:
+      - name: processor_brand
+        description: "Бренд процессора"
+        tests:
+          - not_null
+          - unique
+      - name: total_usage
+        description: "Суммарное количество устройств с процессорами этого бренда"
+        tests:
+          - not_null
